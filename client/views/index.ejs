@@ -1,0 +1,93 @@
+<% 
+    console.log(data);
+    var authors=data.authors;
+    var genre=data.genre;
+    var books=data.books;
+%>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="/css/style_custom.css" rel="stylesheet type="text/css" />
+    <title>Book Store</title>
+
+</head>
+  
+<body>
+<div class="container">
+<!-- header start here -->
+<header>
+<h1>Online Book Center</h1>
+</header>
+<!-- header end here -->
+
+<!-- Content start here -->
+
+<!-- filter start here -->
+<div class="filterGrid">
+<h3>Author</h3>
+<ul id="autContainer">
+<% for(var i in authors){ %>
+
+<li><input type="checkbox" id="author" value="<%= i %>" /><label> <%= i %> (<%= authors[i].count%> ) </label></li>
+<% } %>
+</ul>
+
+<h3>Genre</h3>
+<ul id="autContainer">
+<% for(var i in genre){ %>
+
+<li><input type="checkbox" id="genre"/><label><%= i %> (<%= genre[i].count%> )</label></li>
+<% } %>
+</ul>
+
+</div>
+<!-- filter end here -->
+
+<!-- result start here -->
+<div class="resultGrid">
+
+<div class="sortGrid">Sort : 
+<ul>
+
+<li>
+<label>Price</label>
+ <select>
+  <option value="asc">Ascending </option>
+  <option value="desc">Descending </option>
+
+</select> 
+</li>
+<li>
+<label>Ratings</label>
+ <select>
+  <option value="Star 1">Star 1</option>
+  <option value="Star 2">Star 2</option>
+  <option value="Star 3">Star 3</option>
+  <option value="Star 4">Star 4</option>
+<option value="Star 5">Star 5</option>
+</select> 
+</li>
+</ul>
+
+</div>
+
+<ul class="oBc" id="book-container">
+
+</ul>
+
+</div>
+<!-- result end here -->
+
+    </div>
+    
+        <script src="/js/vendor/jquery.min.js"></script>
+		<script src="/js/vendor/filter.js"></script>
+		<script src="/js/script.js"></script>
+
+
+</body>
+</html>

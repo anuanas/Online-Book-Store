@@ -1,0 +1,62 @@
+ *{margin:0;padding:0}
+    body {
+
+ font-family: arial;
+ font-size: 12px;
+}
+
+a {
+  color: #00B7FF;
+}
+ul.oBc li:after, .container:after{display: table;clear: both;content: " "}
+
+p, ul, li{margin:0;padding: 0;}
+ol, ul, li{list-style: none}
+header{background: #f5f5f5 none repeat scroll 0 0;margin-bottom: 15px;padding: 10px 0;text-align: center;}
+header h1{font-size: 26px;color:#000;line-height: 30px;margin:0;}
+
+.container{width:1170px;margin:0 auto;}
+.container .filterGrid{width:15%;float:left}
+.container .filterGrid h3{font-size:14px;font-weight:bold;}
+.container .filterGrid ul{margin:5px 0 0 0}
+.container .filterGrid li + li{margin:5px 0 0 0;padding:0}
+.container .filterGrid ul + h3{margin-top:25px}
+.container .filterGrid input, .container .filterGrid input + label{display: inline-block;vertical-align: middle;}
+.filterGrid input + label{padding:0 0 0 5px}
+
+.container .resultGrid{border-left: 1px solid #ccc;float: left;margin-bottom: 30px;padding-left: 15px;width:83.5%;}
+.container .resultGrid .sortGrid{border:1px solid #ccc; padding:10px;}
+.container .resultGrid .sortGrid ul, .container .resultGrid .sortGrid li, .container .resultGrid .sortGrid li label, .container .resultGrid .sortGrid li select{display: inline-block;vertical-align: middle;}
+.container .resultGrid .sortGrid li + li{margin-left:15px;}
+
+
+ul.oBc li{   background: #fdfdfd none repeat scroll 0 0;
+    border: 1px solid #ddd;
+    display: inline-table;
+    margin:15px 0 0 0;
+    padding: 10px;
+   }
+
+ul.oBc li .imgGrid{ display: table-cell;
+    margin-right: 20px;vertical-align: top;width:14%;}
+ul.oBc li .imgGrid img {max-height:140px;width:100%}
+ul.oBc li .imgDec{  display: table-cell;
+    font-size: 14px;padding:0 15px;
+    vertical-align: top;width:72%; line-height: 20px;}
+ul.oBc li .imgDec span{display:block;vertical-align: middle;color: #666}
+ul.oBc li .imgDec strong{display: inline-block;width:85px;color: #000;font-weight: normal;}
+ul.oBc li .priceGrid{  border-left: 1px solid #ddd;
+    display: inline-block;
+    min-height: 135px;
+    padding-left: 15px;
+    vertical-align: top;} 
+ul.oBc li .priceGrid input{font-size: 14px;background:#1947cc;color:#fff;padding: 5px 15px;border:none;cursor: pointer;}
+ul.oBc li .priceGrid input:hover{background:#3967ec;}
+.priceGrid .price {
+  color: #1947cc;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+    padding-bottom: 5px;
+}
